@@ -1,0 +1,4 @@
+Generate a call tree for the JavaScript file, showing the dependencies between functions. The root node should be the filename, followed by functions that don't call other functions within the file, and then their descendants based on function calls. Format the output as a tree using indentation and└─ to indicate parent-child relationships. Enclose the output within a JavaScript block comment.
+
+
+What mechanism of retrieving this prompt do you recommend? I want to give this prompt a name, and later I give you the prompt name and you will execute the prompt.
