@@ -13,7 +13,6 @@ The package works by parsing your document, looking for special HTML-style comme
 <!-- :/insert -->
 ```
 
-
 The content of path/to/code.js will be inserted between these tags when the utility is run. This keeps your main document clean and maintainable while allowing you to include dynamic content from other sources. insert-file-tag supports various file types and can be easily integrated into your build process.
 
 ## Table of Contents <!-- omit in toc -->
