@@ -1,0 +1,39 @@
+{
+  "name": "insert-file-tag",
+  "version": "1.0.0",
+  "description": "A file inclusion utility that uses HTML-style comment tags (e.g., <!-- ::insert file=\"path/to/file\" --><!-- :/insert -->) to dynamically insert the content of other files into your documents.",
+  "keywords": [
+    "file",
+    "tag",
+    "insert",
+    "documentation",
+    "automation"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/insert-file-tag.git"
+  },
+  "author": {
+    "name": "ioncakephper",
+    "url": "https://github.com/ioncakephper"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/insert-file-tag/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/insert-file-tag#readme",
+  "scripts": {
+    "test": "npm test"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "jest": "^29.2.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
