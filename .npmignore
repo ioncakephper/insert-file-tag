@@ -1,0 +1,23 @@
+# keep default behavior (includes almost everything)
+**
+
+# Exclude test files
+*.test.js
+*.tests.js
+*.spec.js
+*.specs.js
+
+# Exclude __tests__ directory (as before)
+__tests__/**     
+
+# # Explicitly include essential files (this is important!)
+# !package.json
+# !README.md  # Or README, README.txt, etc.
+# !LICENSE    # If you have one
+# !index.js   # Or your main entry point file as defined in package.json
+# # ... other essential files
+
+# # Exclude other files as per default npm behavior
+# /node_modules/
+
+
