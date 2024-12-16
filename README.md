@@ -1,23 +1,5 @@
 # insert-file-tag
 
-
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [About ](#about-)
-- [About](#about)
-- [Getting Started ](#getting-started-)
-  - [Prerequisites](#prerequisites)
-  - [Installing](#installing)
-- [Usage ](#usage-)
-- [Author ](#author-)
-- [License ](#license-)
-
-## About <a name = "about"></a>
-
-## About
-
 The `insert-file-tag` package is a Node.js utility that simplifies the process of embedding external file content into your documents. It uses special comment tags as markers, allowing you to dynamically insert code snippets, documentation excerpts, or any other text file directly into your main document.  This is particularly useful for:
 
 - **Documentation Generation:** Easily include code examples, configuration files, or output logs into your documentation.
@@ -31,46 +13,41 @@ The package works by parsing your document, looking for special HTML-style comme
 <!-- :/insert -->
 ```
 
+
 The content of path/to/code.js will be inserted between these tags when the utility is run. This keeps your main document clean and maintainable while allowing you to include dynamic content from other sources. insert-file-tag supports various file types and can be easily integrated into your build process.
 
-## Getting Started <a name = "getting_started"></a>
+## Table of Contents <!-- omit in toc -->
+
+- [Getting Started](#getting-started)
+  - [Installing](#installing)
+- [Usage](#usage)
+- [Author](#author)
+- [License](#license)
+
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
+```bash
+$ npm install insert-file-tag
 ```
 
-And repeat
+## Usage
 
+**Basic Usage:**
+
+```bash
+npx insert-file-tag input.md output.md
 ```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo.
+This will process `input.md`, insert the content specified by the tags, and write the result to `output.md`.
 
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
-
-## Author <a name = "autho"></a>
+## Author
 
 [@ioncakephper](https://github.com/ioncakephper)
 
-## License <a name = "license"></a>
+## License
 
 This project is licensed under the [MIT License](./LICENSE).
