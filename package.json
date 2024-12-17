@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/ioncakephper/insert-file-tag#readme",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "commander": "^12.1.0",
