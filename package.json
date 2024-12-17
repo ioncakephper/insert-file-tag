@@ -10,6 +10,9 @@
     "automation"
   ],
   "main": "index.js",
+  "bin": {
+    "instags": "../bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ioncakephper/insert-file-tag.git"
@@ -27,6 +30,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "commander": "^12.1.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.1"
   },

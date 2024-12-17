@@ -4,27 +4,18 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "type": "node",
-            "name": "vscode-jest-tests.v2.insert-file-tag",
-            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\bin\\cli.js",
             "args": [
-                "--runInBand",
-                "--watchAll=false",
-                "--testNamePattern",
-                "${jest.testNamePattern}",
-                "--runTestsByPath",
-                "${jest.testFile}"
+                "SAMPLE_README.md"
             ],
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "disableOptimisticBPs": true,
-            "program": "${workspaceFolder}/node_modules/.bin/jest",
-            "windows": {
-                "program": "${workspaceFolder}/node_modules/jest/bin/jest"
-            }
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         }
+
     ]
 }
