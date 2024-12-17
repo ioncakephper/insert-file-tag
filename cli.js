@@ -21,7 +21,6 @@ program
       console.error(error);
       process.exit(1);
     }
-    
   });
 
 program.parse(process.argv);
@@ -29,4 +28,3 @@ program.parse(process.argv);
 if (!program.args.length) {
   program.help();
 }
-
