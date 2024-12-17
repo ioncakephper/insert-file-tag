@@ -11,7 +11,11 @@
   ],
   "main": "index.js",
   "bin": {
+<<<<<<< HEAD
     "instags": "bin/cli.js"
+=======
+    "instags": "../bin/cli.js"
+>>>>>>> c7d0c55980af70dda627f0972460ffbf4a5a1937
   },
   "repository": {
     "type": "git",
@@ -30,6 +34,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "commander": "^12.1.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.1"
   },
