@@ -9,9 +9,9 @@ The `insert-file-tag` package is a Node.js utility that simplifies the process o
 The package works by parsing your document, looking for special HTML-style comment tags that indicate the path to the file you want to insert. For example:
 
 ```html
-<!-- Error processing file: path/to/code.js -->
-
-
+<!-- ::insert file="path/to/code.js" -->
+ Content of path/to/code.js file will be inserted here.
+<!-- ::/insert -->
 ```
 
 The content of path/to/code.js will be inserted between these tags when the utility is run. This keeps your main document clean and maintainable while allowing you to include dynamic content from other sources. insert-file-tag supports various file types and can be easily integrated into your build process.
@@ -19,7 +19,7 @@ The content of path/to/code.js will be inserted between these tags when the util
 ## Table of Contents <!-- omit in toc -->
 
 - [Getting Started](#getting-started)
-  - [Installing](#installing)
+- [Installing](#installing)
 - [Usage](#usage)
 - [Author](#author)
 - [License](#license)
@@ -28,10 +28,30 @@ The content of path/to/code.js will be inserted between these tags when the util
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Installing
+## Installing
 
 ```bash
-$ npm install insert-file-tag
+$ npm i insert-file-tag
+```
+
+Or,
+
+```bash
+$ npm i insert-file-tag -g
+```
+
+This will install the package globally, making it available from the command line. After installing, you can run the `instags` command.
+
+```bash
+$ instags -h
+```
+
+Or,
+
+You can skip installing it the package globally, and use the `npx instags` command.
+
+```bash
+$ npx insert-file-tag -h
 ```
 
 ## Usage
@@ -39,10 +59,21 @@ $ npm install insert-file-tag
 **Basic Usage:**
 
 ```bash
-npx insert-file-tag input.md output.md
+npx instags -h
 ```
 
-This will process `input.md`, insert the content specified by the tags, and write the result to `output.md`.
+This will display the help message, showing available options like `-V` (version) -o (output folder, and others. It explains how to use the command.
+
+```
+npx instags -V
+```
+This will display the version number of the installed insert-file-tag package.
+
+```bash
+$ npx instags README.md
+```
+
+This command will process the README.md file. It will search for any <!-- ::insert ... --> tags within README.md. If any are found, the specified file content will be inserted in place of the tag, and the updated content will be written back to README.md. If no insert tags are present, the file will remain unchanged.
 
 ## Author
 

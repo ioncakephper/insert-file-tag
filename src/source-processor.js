@@ -48,6 +48,16 @@ function processSourceCode(sourceCode, basePath = ".") {
     const insertRegex = /<!--\s*::(insert|include)\s+file\s*=\s*"([^"]+)"(?:[\s\S]*?)\s*-->([\s\S]*?)<!--\s*:\/(insert|include)\s*-->/g;
     const processedContent = sourceCode;
 
+    /**
+     * Reads the content of a file and wraps it in an insert/include tag. If there
+     * is an error while reading the file, logs the error and returns the original
+     * content with an error message.
+     *
+     * @param {string} filePath - The path to the file to read.
+     * @param {string} file - The name of the file as specified in the tag.
+     * @param {string} existingContent - The content that was previously inside the tag.
+     * @returns {string} - The content of the file wrapped in an insert/include tag.
+     */
     function getFileContent(filePath, file, existingContent) {
         try {
             const fileContent = fs.readFileSync(filePath, 'utf8');

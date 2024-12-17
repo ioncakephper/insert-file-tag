@@ -2,6 +2,9 @@
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
 
+## [1.1.0] - 2024-12-17
+
+
 ## [1.0.3] - 2024-12-17
 ### Changed
 - Commented out test in processSourceCode.test.js
