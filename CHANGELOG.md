@@ -4,7 +4,7 @@
 
 ## [1.0.3] - 2024-12-17
 ### Changed
-- script test in package.json has jest --passWithNoTests
+- Commented out test in processSourceCode.test.js
 
 
 ## [1.0.0] - 2024-12-16
