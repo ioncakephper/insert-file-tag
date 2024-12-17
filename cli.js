@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const { Command } = require('commander');
-const { processAndSaveFileWithTags } = require('../src/source-processor');
-const packageJson = require('../package.json');
+const { processAndSaveFileWithTags } = require('./src/source-processor');
+const packageJson = require('./package.json');
 const path = require('path');
 
 const program = new Command();
@@ -15,7 +15,13 @@ program
   .option('-o, --output <output>', 'output filename', '')
   .action((filename, options) => {
     const outputFilename = options.output || filename;
-    processAndSaveFileWithTags(filename, outputFilename);
+    try {
+      processAndSaveFileWithTags(filename, outputFilename);
+    } catch (error) {
+      console.error(error);
+      process.exit(1);
+    }
+    
   });
 
 program.parse(process.argv);

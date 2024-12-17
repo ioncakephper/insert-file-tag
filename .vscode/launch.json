@@ -6,9 +6,9 @@
     "configurations": [
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\bin\\cli.js",
+            "program": "${workspaceFolder}\\cli.js",
             "args": [
-                "SAMPLE_README.md"
+                "README.md"
             ],
             "request": "launch",
             "skipFiles": [

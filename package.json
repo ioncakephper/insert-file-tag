@@ -11,11 +11,7 @@
   ],
   "main": "index.js",
   "bin": {
-<<<<<<< HEAD
-    "instags": "bin/cli.js"
-=======
-    "instags": "../bin/cli.js"
->>>>>>> c7d0c55980af70dda627f0972460ffbf4a5a1937
+    "instags": "cli.js"
   },
   "repository": {
     "type": "git",

@@ -9,8 +9,9 @@ The `insert-file-tag` package is a Node.js utility that simplifies the process o
 The package works by parsing your document, looking for special HTML-style comment tags that indicate the path to the file you want to insert. For example:
 
 ```html
-<!-- ::insert file="path/to/code.js" -->
-<!-- :/insert -->
+<!-- Error processing file: path/to/code.js -->
+
+
 ```
 
 The content of path/to/code.js will be inserted between these tags when the utility is run. This keeps your main document clean and maintainable while allowing you to include dynamic content from other sources. insert-file-tag supports various file types and can be easily integrated into your build process.
